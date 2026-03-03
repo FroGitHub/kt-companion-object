@@ -5,8 +5,8 @@ class LetterRemover {
         const val LETTER_R: Char = 'r'
         const val SYM: Char = '!'
 
-        @JvmStatic fun removeLetter(message: String): CharArray
-        = message
+        @JvmStatic fun removeLetter(input: String): CharArray
+        = input
             .lowercase()
             .replace(LETTER_R, SYM)
             .toCharArray()
